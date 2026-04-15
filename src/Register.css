@@ -1,0 +1,68 @@
+/* Full Center Background */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #9333ea, #3b82f6);
+  font-family: Arial, sans-serif;
+}
+
+/* Card Box */
+.register-box {
+  width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+.register-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Styling */
+.register-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.register-input:focus {
+  border-color: #9333ea;
+  box-shadow: 0 0 5px rgba(147, 51, 234, 0.5);
+  outline: none;
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #7e22ce;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to   { opacity: 1; transform: translateY(0); }
+}

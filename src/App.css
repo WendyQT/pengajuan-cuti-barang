@@ -1,0 +1,29 @@
+body {
+   background: linear-gradient(135deg, #ff7a00, #ffb347);
+  min-height: 100vh;
+}
+
+/* Card biar modern */
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* Navbar hover */
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Dropdown lebih smooth */
+.dropdown-menu {
+  border-radius: 10px;
+}
+
+/* Button lebih smooth */
+.btn {
+  border-radius: 8px;
+}
