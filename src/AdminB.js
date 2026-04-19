@@ -179,24 +179,13 @@ function AdminB() {
   const getAvailableActions = (item) => {
     const actions = [];
     
-    switch(item.status) {
-      case "pending":
-        actions.push({ type: "setujui", label: "Setujui", icon: "check", color: "success" });
-        actions.push({ type: "tolak", label: "Tolak", icon: "x", color: "danger" });
-        actions.push({ type: "proses", label: "Proses", icon: "gear", color: "warning" });
-        break;
-      case "disetujui":
-        actions.push({ type: "terima", label: "Barang Diterima", icon: "box-seam", color: "primary" });
-        actions.push({ type: "tolak", label: "Batalkan", icon: "x", color: "danger" });
-        break;
-      case "diproses":
-        actions.push({ type: "setujui", label: "Setujui", icon: "check", color: "success" });
-        actions.push({ type: "tolak", label: "Tolak", icon: "x", color: "danger" });
-        break;
-      case "ditolak":
-        actions.push({ type: "setujui", label: "Setujui Kembali", icon: "arrow-clockwise", color: "success" });
-        break;
-    }
+   switch(status) {
+  case "approve":
+    // code
+    break;
+  default:
+    break;
+}
     
     return actions;
   };
