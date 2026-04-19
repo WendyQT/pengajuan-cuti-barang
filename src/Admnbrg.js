@@ -176,7 +176,7 @@ function AdminBarang() {
   };
 
   // Filter actions based on current status
- const getAvailableActions = (item) => {
+const getAvailableActions = (item) => {
   const actions = [];
 
   switch (item.status) {

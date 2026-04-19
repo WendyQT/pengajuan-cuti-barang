@@ -206,7 +206,6 @@ function AdminB() {
 
   return actions;
 };
-
   if (loading) {
     return (
       <div className="container mt-4 text-center">
