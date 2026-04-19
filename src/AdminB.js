@@ -176,19 +176,36 @@ function AdminB() {
   };
 
   // Filter actions based on current status
-  const getAvailableActions = (item) => {
-    const actions = [];
-    
-   switch(status) {
-  case "approve":
-    // code
-    break;
-  default:
-    break;
-}
-    
-    return actions;
-  };
+ const getAvailableActions = (item) => {
+  const actions = [];
+
+  switch (item.status) {
+    case "pending":
+      actions.push(
+        { type: "setujui", label: "Setujui", color: "success", icon: "check" },
+        { type: "tolak", label: "Tolak", color: "danger", icon: "x" },
+        { type: "proses", label: "Proses", color: "warning", icon: "gear" }
+      );
+      break;
+
+    case "diproses":
+      actions.push(
+        { type: "terima", label: "Terima", color: "primary", icon: "box" }
+      );
+      break;
+
+    case "disetujui":
+      actions.push(
+        { type: "terima", label: "Terima", color: "primary", icon: "box" }
+      );
+      break;
+
+    default:
+      break;
+  }
+
+  return actions;
+};
 
   if (loading) {
     return (
